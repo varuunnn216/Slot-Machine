@@ -1,0 +1,102 @@
+.slot-machine {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    width: 600px;
+    margin: auto;
+  }
+  
+  .slot-machine h2 {
+    margin-bottom: 10px;
+  }
+  
+  .reels {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .reel {
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    transition: transform 0.5s;
+  }
+  
+  .reel.spinning {
+    transform: rotate(360deg);
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item-icon {
+    color: #FFD700; /* Gold color for emphasis */
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .rewards h3 {
+    margin-top: 15px;
+    color: #FFD700;
+  }
+  
+  .rewards ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .rewards li {
+    font-size: 0.8em;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+  }
+  
+  .rewards li svg {
+    margin-right: 8px;
+  }
+  
+  /* src/styles/SlotMachine.css */
+
+.outcome {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  .outcome.win {
+    color: #FFD700; /* Gold color for win */
+  }
+  
+  .outcome.lose {
+    color: #DC143C; /* Crimson color for lose */
+  }
+  
